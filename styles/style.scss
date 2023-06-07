@@ -1,0 +1,239 @@
+// * {
+//     padding: 0;
+//     margin: 0;
+//     background-color: rgb(128,128,128);
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     color:white;
+// }
+// .header__container {
+//     margin: 5rem ;
+//     text-align: center;
+//     font-size: 30px;
+
+// }
+// .prs__score {
+//     display: flex;
+//     gap: 5px;
+//     justify-content: center;
+//     font-size: 30px;
+// }
+// .main__container {
+//     margin : 5rem;
+//     display: flex;
+//     justify-content: center;
+//     gap:50px;
+    
+
+//     .main__container-rock {
+//         font-size: 3em;
+//     }
+//     .main__container-paper {
+//         font-size: 3em;
+//     }
+//     .main__container-scissors {
+//         font-size: 3em;
+//     }
+// }
+// .main__container-paper .fa-hand {
+//     color:yellow;
+//  }
+//  .main__container-rock .fa-hand-back-fist {
+//     color:green;
+//  }
+//  .main__container-scissors .fa-hand-scissors {
+//     color: red;
+//  }
+
+//  .fa-hand-back-fist[data-value="Rock"] {
+//     color: yellow;
+//   }
+  
+//   .fa-hand[data-value="Paper"] {
+//     color: green;
+//   }
+  
+//   .fa-hand-scissors[data-value="Scissors"] {
+//     color: red;
+//   }
+//  .main__container-sign{
+//      border-radius: 50%; /* Postavlja oblik kontejnera u oblik kruga */
+//      border: 2px solid white; /* Dodaje crni okvir oko kontejnera */
+//      padding: 2rem;
+//      &.main__container-sign :hover{
+//          cursor: pointer;
+//      }
+//      font-size: 35px;
+
+//  }
+// .choice {
+//     display: flex;
+//     gap: 56px;
+//     justify-content: space-around;
+//     font-size: 30px;
+// }
+// .button {
+//     display: flex;
+//     text-decoration: none;
+//     border-radius: 8px;
+//     padding: 0.5rem 1.5rem;
+//     background-color: red;
+//     margin:2rem auto;
+//     width: fit-content;
+//     transition: 0.3 ease-in-out;
+// }
+// .button:hover {
+//     background-color: rgb(9, 166, 172);
+// }
+
+
+
+
+*{
+    height: fit-content;
+}
+
+#gameDiv {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.choiceBtn {
+    line-height: 30px;
+    width: 150px;
+    background-color: rgb(47, 124, 124);
+    color: black;
+    border-color: rgb(130, 214, 19);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+#playerText {
+    color: rgb(4, 90, 90);
+}
+#computerText {
+    color: rgb(110, 30, 30);
+}
+#resultText {
+    color: black;
+}
+
+#winnerDiv {
+    text-align: center;
+}
+
+$primary-color: #4CAF50;
+$secondary-color: #FF9800;
+
+body {
+  background-color: #62bae2;
+}
+
+#gameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .choiceBtn {
+    font-size: 1.2rem;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+   
+  }
+}
+
+#winnerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+  #winnerText {
+    font-size: 3rem;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+#scoreDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+
+  p {
+    font-size: 2rem;
+    color: $primary-color;
+    margin: 10px;
+  }
+}
+
+#resetBtn {
+  display: block;
+  margin: 50px auto;
+  font-size: 1.2rem;
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+
+#sticky {
+    position:absolute;
+    top:15rem;
+    right: 10rem;
+
+}
+img {
+    max-width: 300px;
+    height: auto;
+  }
+
+#heading {
+  text-align: center;
+  font-size: 3rem;
+
+  
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+}
